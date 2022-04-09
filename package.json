@@ -8,12 +8,8 @@
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
     "lint": "eslint src/**/*.ts",
-    "format": "eslint src/**/*.ts --fix"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
+    "format": "eslint src/**/*.ts --fix",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
