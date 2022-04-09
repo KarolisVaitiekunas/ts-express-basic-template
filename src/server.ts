@@ -1,7 +1,7 @@
-import axios from 'axios';
 import express, { NextFunction, Request, Response } from 'express';
+import axios from 'axios';
 
-const app = express();
+let app = express();
 
 //Allow all requests from all domains & localhost
 app.all('/*', function (req: Request, res: Response, next: NextFunction) {
